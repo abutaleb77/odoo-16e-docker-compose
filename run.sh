@@ -2,7 +2,6 @@
 DESTINATION=$1
 PORT=$2
 CHAT=$3
-PASS=$4
 # clone Odoo directory
 git clone --depth=1 https://github.com/abutaleb77/odoo-16e-docker-compose $DESTINATION
 rm -rf $DESTINATION/.git
@@ -17,4 +16,4 @@ sed -i 's/20016/'$CHAT'/g' $DESTINATION/docker-compose.yml
 # run Odoo
 docker-compose -f $DESTINATION/docker-compose.yml up -d
 
-echo 'Started Odoo @ http://localhost:'$PORT' | Master Password: '$PASS' | Live chat port: '$CHAT'
+echo 'Started Odoo @ http://localhost:'$PORT' | Master Password: abutaleb | Live chat port: '$CHAT

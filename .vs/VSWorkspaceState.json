@@ -5,6 +5,6 @@
     "\\etc",
     "\\screenshots"
   ],
-  "SelectedNode": "\\entrypoint.sh",
+  "SelectedNode": "\\etc\\odoo.conf",
   "PreviewInSolutionExplorer": false
 }
