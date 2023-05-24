@@ -11,7 +11,7 @@ services:
     volumes:
         - ./postgresql:/var/lib/postgresql/data
 
-  odoo15:
+  odoo16:
     image: odoo:16
     user: root
     depends_on:
@@ -26,12 +26,10 @@ services:
       - USER=odoo
       - PASSWORD=odoo16@2022
     volumes:
-      #- /etc/timezone:/etc/timezone:trt
-      #- /etc/localtime:/etc/localtime:trt
+      #- /etc/timezone:/etc/timezone:ro
+      #- /etc/localtime:/etc/localtime:ro
       # - ./entrypoint.sh:/entrypoint.sh   # if you want to install additional Python packages, uncomment this line!
       - ./addons:/mnt/extra-addons
       - ./etc:/etc/odoo
-      - ./enterprise:/mnt/enterprise-addons
-      - ./workspace:/mnt/company-addons
     restart: always             # run as a service
     

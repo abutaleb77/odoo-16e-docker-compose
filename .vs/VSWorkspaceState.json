@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\addons",
-    "\\etc",
-    "\\screenshots"
+    ""
   ],
-  "SelectedNode": "\\etc\\odoo.conf",
+  "SelectedNode": "\\C:\\Users\\administrator\\Source\\Repos\\odoo-16e-docker-compose",
   "PreviewInSolutionExplorer": false
 }
