@@ -2,8 +2,6 @@ version: '3.4'
 services:
   db:
     image: postgres:15
-    networks:
-      - odoo
     user: root
     environment:
       - POSTGRES_USER=odoo
@@ -15,8 +13,6 @@ services:
 
   odoo16:
     image: odoo:16
-    networks:
-      - odoo
     user: root
     depends_on:
       - db
